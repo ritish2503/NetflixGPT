@@ -2,6 +2,8 @@
 
 - Create react app
 - Configured Tailwind
+- Create components folder inside src
+
 
 
 # Features We are Building
