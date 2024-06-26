@@ -3,7 +3,13 @@
 - Create react app
 - Configured Tailwind
 - Create components folder inside src
-
+- Header
+- Routing of App
+- Landing
+- Login, Signup forms
+- Form Validation
+- useRef() hook
+- 
 
 
 # Features We are Building
