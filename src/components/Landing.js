@@ -1,17 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from './Header';
 import Background from './Background';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { addEmail } from '../utils/userSlice';
 
 
 const Landing = () => {
 
-  const [email, setEmail] = useState('');
+  const dispatch = useDispatch();
+  const email = useSelector(state => state.user.email);
 
   const onEmailEdit = (e) => {
-      setEmail(e.target.value);
+      dispatch(addEmail(e.target.value));
   }
 
+  
   return (
     <div className=''>
         <Header />
